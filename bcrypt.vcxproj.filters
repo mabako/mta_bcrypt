@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\extra">
+      <UniqueIdentifier>{be74f9c0-2436-4a4d-90d4-68aa2510c6ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\extra">
+      <UniqueIdentifier>{13d3758a-aef1-435c-a610-2f6c6285fb2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{23057f76-33c7-420b-a4ca-ca03a195f27c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bcrypt">
+      <UniqueIdentifier>{b8d26edf-6e70-46f6-9fd6-efad81329183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bcrypt">
+      <UniqueIdentifier>{c839a589-3485-4ed5-aff4-b2e7b0f9bad3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extra\CLuaArgument.cpp">
+      <Filter>Source Files\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="extra\CLuaArguments.cpp">
+      <Filter>Source Files\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="bcrypt\bcrypt.c">
+      <Filter>Source Files\bcrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="bcrypt\crypt_blowfish\wrapper.c">
+      <Filter>Source Files\bcrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="bcrypt\crypt_blowfish\crypt_blowfish.c">
+      <Filter>Source Files\bcrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="bcrypt\crypt_blowfish\crypt_gensalt.c">
+      <Filter>Source Files\bcrypt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extra\CLuaArgument.h">
+      <Filter>Header Files\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="extra\CLuaArguments.h">
+      <Filter>Header Files\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ILuaModuleManager.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lauxlib.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lua.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\luaconf.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lualib.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="bcrypt\bcrypt.h">
+      <Filter>Header Files\bcrypt</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
