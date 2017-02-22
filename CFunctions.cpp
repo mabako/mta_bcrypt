@@ -4,6 +4,7 @@
 namespace bcrypt {
 	#include "bcrypt/bcrypt.h"
 }
+
 #include "CFunctions.h"
 #include "extra/CLuaArguments.h"
 
@@ -56,11 +57,9 @@ int CFunctions::hashpw(lua_State* luaVM)
 		{
 			const char* password = luaL_checkstring(luaVM, 1);
 			const char* salt = luaL_checkstring(luaVM, 2);
-			char salt2[BCRYPT_HASHSIZE] = { 0 };
 			char hash[BCRYPT_HASHSIZE] = { 0 };
 
-			strcpy_s(salt2, salt);
-			int err = bcrypt::bcrypt_hashpw(password, salt2, hash);
+			int err = bcrypt::bcrypt_hashpw(password, salt, hash);
 			if (err)
 			{
 				luaL_error(luaVM, "Unable to generate hash @ 'bcrypt_hashpw'");
@@ -89,8 +88,6 @@ int CFunctions::checkpw(lua_State* luaVM)
 		{
 			const char* password = luaL_checkstring(luaVM, 1);
 			const char* hash = luaL_checkstring(luaVM, 2);
-			char hash2[BCRYPT_HASHSIZE] = { 0 };
-			strcpy_s(hash2, hash);
 
 			int err = bcrypt::bcrypt_checkpw(password, hash);
 			lua_pushboolean(luaVM, err == 0);
