@@ -57,7 +57,7 @@ int CFunctions::hashpw(lua_State* luaVM)
 		{
 			const char* password = luaL_checkstring(luaVM, 1);
 			const char* salt = luaL_checkstring(luaVM, 2);
-			char hash[BCRYPT_HASHSIZE] = { 0 };
+			char hash[BCRYPT_HASHSIZE+1] = { 0 };
 
 			int err = bcrypt::bcrypt_hashpw(password, salt, hash);
 			if (err)
