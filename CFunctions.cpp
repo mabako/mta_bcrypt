@@ -23,7 +23,7 @@ int CFunctions::gensalt(lua_State* luaVM)
 			else
 			{
 				char input[16] = { 0 };
-				char output[64] = { 0 };
+				char output[BCRYPT_HASHSIZE + 1] = { 0 };
 
 				std::random_device rd;
 				std::mt19937 gen(rd());
