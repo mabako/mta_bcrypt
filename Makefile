@@ -5,7 +5,7 @@ PROG = bcrypt.so
 # NOTE: add -g for debug, remove for release!
 CPPFLAGS = -MD -Wall -I./ -std=c++11 -fPIC
 LDFLAGS = -shared -Wl,-soname,$(PROG).1,-R./
-LIBS = -lpthread -llua5.1 -L./bcrypt -lbcrypt
+LIBS = -lpthread -L./bcrypt -lbcrypt
 
 
 #### Source and object files
