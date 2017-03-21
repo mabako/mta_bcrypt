@@ -23,7 +23,7 @@
 /** MODULE SPECIFIC INFORMATION **/
 #define MODULE_NAME         "bcrypt Module"
 #define MODULE_AUTHOR       "mabako"
-#define MODULE_VERSION      1.1
+#define MODULE_VERSION      1.2f
 
 #include <string.h>
 #include "Common.h"

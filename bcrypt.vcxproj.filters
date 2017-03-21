@@ -50,6 +50,9 @@
     <ClCompile Include="bcrypt\crypt_blowfish\crypt_gensalt.c">
       <Filter>Source Files\bcrypt</Filter>
     </ClCompile>
+    <ClCompile Include="luaimports.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CFunctions.h">
@@ -84,6 +87,9 @@
     </ClInclude>
     <ClInclude Include="bcrypt\bcrypt.h">
       <Filter>Header Files\bcrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="luaimports.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

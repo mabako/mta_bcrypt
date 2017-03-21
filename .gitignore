@@ -7,3 +7,5 @@ Debug/
 *.d
 *.o
 *.so
+*.VC.db
+*.VC.opendb

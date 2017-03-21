@@ -229,6 +229,10 @@
     <ClCompile Include="CFunctions.cpp" />
     <ClCompile Include="extra\CLuaArgument.cpp" />
     <ClCompile Include="extra\CLuaArguments.cpp" />
+    <ClCompile Include="luaimports.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="module.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -242,6 +246,7 @@
     <ClInclude Include="include\lua.h" />
     <ClInclude Include="include\luaconf.h" />
     <ClInclude Include="include\lualib.h" />
+    <ClInclude Include="luaimports.h" />
     <ClInclude Include="module.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
